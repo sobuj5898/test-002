@@ -1,0 +1,148 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+
+.product-bg-1{background-image: url(../image/product-1.jpg)}
+.product-bg-2{background-image: url(../image/product-1.jpg)}
+.product-bg-3{background-image: url(../image/product-1.jpg)}
+.product-bg-4{background-image: url(../image/product-1.jpg)}
+.product-bg-5{background-image: url(../image/product-1.jpg)}
+.product-bg-6{background-image: url(../image/product-1.jpg)}
+.product-bg-7{background-image: url(../image/product-1.jpg)}
+.product-bg-8{background-image: url(../image/product-1.jpg)}
+.product-bg-9{background-image: url(../image/product-1.jpg)}
+
+
+section.section-padding {
+    padding:  80px 0;
+}
+
+ul.project-title {
+    margin:  0;
+    padding:  0;
+    list-style:  none;
+}
+
+ul.project-title li {
+    display:  inline-block;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    cursor:  pointer;
+    font-weight: 600;
+    /* color: #d0bebe; */
+}
+
+ul.project-title li:hover {
+    /* color: #00DBD5; */
+}
+
+.single-prodect-item a, .single-prodect-item span {
+    color: #00DBD5;
+}
+
+.single-prodect-item {
+    height: 326px;
+    background-position: center;
+    background-size:  cover;
+    background-color:  #ddd;
+    margin-bottom: 15px;
+    position:  relative;
+    z-index: 2;
+}
+.row.project-list .col-md-4:nth-child(2) .single-prodect-item,
+.row.project-list .col-md-4:nth-child(4) .single-prodect-item,
+.row.project-list .col-md-4:nth-child(6) .single-prodect-item
+{
+	height:668px;
+	
+}
+
+
+
+.row.project-list col-md-4 {
+    padding-left:  7.5px;
+    padding-right:  7.5px;
+}
+
+.row.project-list {
+    margin-left:  -7.5px;
+    margin-right:  -7.5px;
+}
+
+.row.project-list .col-md-4 {
+    padding-right:  7.5px;
+    padding-left:  7.5px;
+}
+
+.project-hover:after {
+    position:  absolute;
+    left:  0;
+    top: 0;
+    height:  100%;
+    width: 100%;
+    content:  "";
+    background: #333;
+    opacity: .6;
+    z-index: -1;
+}
+
+.project-hover {
+    position:  relative;
+    z-index:  2;
+    width:  100%;
+    height:  100%;
+    opacity: 0;
+    transition:  .3s;
+}
+
+.project-hover a {
+    position: absolute;
+    right:  30px;
+    top:  30px;
+    font-size: 25px;
+}
+
+.project-hover h4 {
+    color:  #fff;
+    font-weight:  400;
+    margin:  0;
+    position:  absolute;
+    bottom: 26px;
+    left:  30px;
+}
+
+.project-hover h4 span {
+    display:  block;
+    font-size:  80%;
+    margin-top: 8px;
+}
+
+.single-prodect-item:hover .project-hover {opacity:  1;}
